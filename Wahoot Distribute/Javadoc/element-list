@@ -1,0 +1,11 @@
+wahoot.client
+wahoot.client.ui.event
+wahoot.client.ui.fxml
+wahoot.client.ui.model
+wahoot.client.ui.util
+wahoot.client.ui.view
+wahoot.client.ui.view.navigator
+wahoot.db
+wahoot.db.dao
+wahoot.db.models
+wahoot.db.utils
