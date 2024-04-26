@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="435.0" style="-fx-background-color: #4f2d83;" stylesheets="@../css/Topbar.css" type="HBox" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="390.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="54.0" fitWidth="184.0" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-three-dots-50.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="388.0" spacing="50.0" HBox.hgrow="ALWAYS">
+         <children>
+            <JFXCheckBox fx:id="forceQuizCheckBox" checkedColor="#1d17c3" style="-fx-background-color: dimgray; -fx-background-radius: 5; -fx-background-insets: -8;" text="Force Quiz Countdown" textFill="#a4a294" visible="false" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="147.0">
+               <children>
+                  <ImageView fx:id="brightModeImage" fitHeight="48.0" fitWidth="62.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/icons8-light-mode-78.png" />
+                     </image>
+                  </ImageView>
+                  <JFXToggleButton fx:id="darkModeToggleButton" prefHeight="68.0" prefWidth="74.0" size="12.0" toggleColor="#57606f" toggleLineColor="BLACK" unToggleLineColor="#dd8406" />
+                  <ImageView fx:id="darkModeImage" fitHeight="35.0" fitWidth="33.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/darkmode.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ImageView fitHeight="54.0" fitWidth="69.0" preserveRatio="true" fx:id="xImage">
+               <image>
+                  <Image url="@../img/14034319.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="8.0" right="5.0" top="8.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </HBox>
+   </children>
+</fx:root>

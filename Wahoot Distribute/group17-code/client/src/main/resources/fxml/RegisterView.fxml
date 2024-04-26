@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="usernameField" layoutX="374.0" layoutY="180.0" promptText="Username" />
+      <Button fx:id="createAccountButton" layoutX="403.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: #4f2d83;" text="Create Account" textFill="WHITE" />
+      <TextField fx:id="lastNameField" layoutX="374.0" layoutY="137.0" promptText="Last Name" />
+      <TextField fx:id="firstNameField" layoutX="374.0" layoutY="94.0" promptText="First Name" />
+      <PasswordField fx:id="passwordField" layoutX="375.0" layoutY="220.0" promptText="Create Password" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="375.0" layoutY="261.0" promptText="Confirm Password" />
+      <Label alignment="CENTER" layoutX="411.0" layoutY="46.0" text="Sign Up" textAlignment="CENTER" textFill="#4f2d83" wrapText="false">
+         <font>
+            <Font name="Roboto Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f2d83" height="471.0" stroke="TRANSPARENT" strokeType="INSIDE" width="308.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="97.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/WahootLogo.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="cancelButton" layoutX="403.0" layoutY="387.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #4f2d83;" text="Cancel" textFill="WHITE" />
+      <Label fx:id="usernameTakenLabel" alignment="CENTER" layoutX="321.0" layoutY="323.0" prefHeight="17.0" prefWidth="266.0" text="Please fill in all fields" textFill="#909090" />
+      <CheckBox fx:id="TeacherButton" layoutX="395.0" layoutY="297.0" mnemonicParsing="false" text="Teacher Account" textFill="#4f2d83" />
+   </children>
+</fx:root>

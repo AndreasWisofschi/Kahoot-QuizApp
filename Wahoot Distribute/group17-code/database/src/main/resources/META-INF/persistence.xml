@@ -1,0 +1,59 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+
+<!-- Persistence Provider -->
+    <!-- RESOURCE-LOCAL: Application-managed transactions -->
+    <!-- JTA: Container-managed transactions -->
+    <persistence-unit name = "USER" transaction-type="RESOURCE_LOCAL">
+
+        <!-- Entity Class -->
+        <class>wahoot.db.models.User</class>
+        <class>wahoot.db.models.Teacher</class>
+        <class>wahoot.db.models.Administrator</class>
+        <class>wahoot.db.models.Student</class>
+        <class>wahoot.db.models.Classroom</class>
+        <class>wahoot.db.models.School</class>
+        <class>wahoot.db.utils.AccountTypeConverter</class>
+        <class>wahoot.db.models.Quiz</class>
+        <class>wahoot.db.models.Leaderboard</class>
+
+
+        <properties>
+            <property name="hibernate.hql.bulk_id_strategy"
+                      value="org.hibernate.hql.spi.id.inline.InlineIdsInClauseBulkIdStrategy"
+            />
+
+
+            <!-- Connection properties -->
+            <property name="hibernate.dialect" value="org.hibernate.community.dialect.SQLiteDialect" />
+            <property name="hibernate.connection.driver_class" value="org.sqlite.JDBC" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:company.db" />
+            <!-- Fill if we need user and password -->
+            <property name="jakarta.persistence.jdbc.user" value="" />
+            <property name="jakarta.persistence.jdbc.password" value="" />
+            <property name="hibernate.id.new_generator_mappings" value="true" />
+
+            <!-- Echo all executed SQL to console -->
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.highlight_sql" value="true" />
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
+
+            <!-- Controls logging level -->
+            <property name="eclipselink.logging.level" value="INFO" />
+            <!-- <property name="eclipselink.logging.level" value="ALL" /> -->
+
+            <!-- JPA doesn't create the schema -->
+            <!-- property name="eclipselink.ddl-generation" value="create-tables" /-->
+            <!-- JPA destroys and recreates the schema -->
+            <!-- <property name="eclipselink.ddl-generation" value="drop-and-create-tables" /> -->
+
+            <property name="hibernate.enable_lazy_load_no_trans" value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+</persistence>

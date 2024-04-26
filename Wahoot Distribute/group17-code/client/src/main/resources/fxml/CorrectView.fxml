@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="328.0" prefWidth="470.0" style="-fx-background-color: #8cc751;" stylesheets="@../css/Style.css" type="StackPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="pointsLabel" alignment="CENTER" prefHeight="24.0" prefWidth="98.0" styleClass="transparent" text="+1,100" textFill="WHITE" StackPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <StackPane.margin>
+            <Insets top="185.0" />
+         </StackPane.margin>
+      </Label>
+      <VBox alignment="CENTER">
+         <children>
+            <Label text="Correct" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="46.0" />
+               </font>
+            </Label>
+            <ImageView preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Downloads/icons8-check-mark-52.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Answer Streak" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <StackPane>
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="45.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/icons8-fire-48%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="streakLabel" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="13.0" text="0" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets right="1.0" top="2.0" />
+                           </StackPane.margin>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</fx:root>

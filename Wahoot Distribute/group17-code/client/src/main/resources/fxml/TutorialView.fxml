@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" type="BorderPane" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="400.0">
+         <content>
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="1300.0" prefWidth="598.0" style="-fx-background-color: B1A0DA;" StackPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="235.0" fitWidth="298.0" layoutX="8.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Screen%20Shot%202024-03-31%20at%206.28.37%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="-60.0" endY="124.0" layoutX="118.0" layoutY="670.0" startX="-82.0" startY="-21.0">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Line>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ece4f2" height="60.0" layoutX="72.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="442.0" />
+                        <Circle fill="#4f2d83" layoutX="250.0" layoutY="794.0" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Line endX="92.0" endY="-198.0" layoutX="188.0" layoutY="846.0" startX="68.0" startY="-96.0" />
+                        <Label fx:id="lbl_welcome" alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="21.0" prefHeight="24.0" prefWidth="399.0" text="WELCOME NEW USER" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="October Devanagari Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#4f2d83" layoutX="58.0" layoutY="794.0" radius="43.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f2d83" height="214.0" layoutX="9.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="242.0" />
+                        <Label layoutX="14.0" layoutY="147.0" text="Getting Started">
+                           <font>
+                              <Font name="Gujarati Sangam MN Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextArea editable="false" layoutX="15.0" layoutY="195.0" maxWidth="-Infinity" prefHeight="202.0" prefWidth="226.0" text="1. Click on the classes page from the main menu&#10;&#10;2. Click the enroll button&#10;&#10;3. Enroll into a new classroom using the code your teacher has provided" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextArea>
+                        <Label layoutX="10.0" layoutY="457.0" text="Playing the Game">
+                           <font>
+                              <Font name="Gujarati Sangam MN Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f2d83" height="300.0" layoutX="317.0" layoutY="500.0" stroke="BLACK" strokeType="INSIDE" width="259.0" />
+                        <TextArea editable="false" layoutX="326.0" layoutY="509.0" maxWidth="-Infinity" prefHeight="281.0" prefWidth="242.0" text="1. Click on the quizzes page from the main menu&#10;&#10;2. Quizzes from your classrooms will be displayed&#10;&#10;3. Choose the quiz you wish to attempt&#10;&#10;4. The number of questions and time remaining will be diplayed&#10;&#10;5. Choose your answer with mouse input (click).&#10;&#10;6. Click &quot;force quiz shutdown&quot; to submit your answer or wait for the countdown" wrapText="true" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4f2d83" height="263.0" layoutX="20.0" layoutY="958.0" stroke="BLACK" strokeType="INSIDE" width="181.0" />
+                        <TextArea editable="false" layoutX="36.0" layoutY="972.0" maxWidth="-Infinity" prefHeight="235.0" prefWidth="150.0" text="1. Once a quiz is complete a leaderboard will be viewed&#10;&#10;2. Compare your performance to your classmates" wrapText="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextArea>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="193.0" layoutY="780.0" prefHeight="20.0" prefWidth="114.0" text="Questions" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="784.0" text="Time Left" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="237.0" layoutY="800.0" text="Left" textFill="#fffefe">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="21.0" layoutY="908.0" text="Check your progress">
+                           <font>
+                              <Font name="Gujarati Sangam MN Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="29.0" fitWidth="23.0" layoutX="114.0" layoutY="687.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/cursor.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="267.0" fitWidth="285.0" layoutX="280.0" layoutY="958.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Screen%20Shot%202024-03-31%20at%207.06.46%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="262.0" fitWidth="298.0" layoutX="274.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Screen%20Shot%202024-04-01%20at%205.08.50%20PM.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="23.0" layoutX="437.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/cursor.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </content>
+      </ScrollPane>
+   </center>
+</fx:root>

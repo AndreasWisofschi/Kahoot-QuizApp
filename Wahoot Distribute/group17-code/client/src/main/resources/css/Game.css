@@ -1,0 +1,19 @@
+#logoImagePane {
+  -fx-background-image: url('../img/wahoot-logo.png');
+  -fx-background-size: stretch;
+}
+
+.home {
+-fx-background-color: #2c3e50; 
+}
+.quizBackground {
+    -fx-background-color: f0f0f0;
+}
+
+.question {
+    -fx-background-color: white;
+    -fx-border-color: c0c0c0;
+    -fx-border-width: 2;
+    -fx-border-style: none none outset none;
+}
+

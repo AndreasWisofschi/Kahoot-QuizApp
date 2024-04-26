@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id("org.openjfx.javafxplugin") version "0.1.0"
+}
+
+javafx {
+    version = "19"
+    modules = [ 'javafx.base']
+}
+
+group = 'wahoot'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "19"
+    modules = [ 'javafx.base']
+}
+
+
+dependencies {
+    implementation 'org.xerial:sqlite-jdbc:3.45.1.0'
+    implementation 'org.hibernate.orm:hibernate-core:6.4.4.Final'
+    implementation 'org.hibernate.orm:hibernate-community-dialects:6.4.1.Final'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation 'org.mockito:mockito-core:3.12.4' //Daniel - needed for test
+}
+
+test {
+    useJUnitPlatform()
+}
+

@@ -1,0 +1,6 @@
+rootProject.name = 'wahoot'
+include 'server'
+include 'client'
+include 'database'
+
+
